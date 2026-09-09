@@ -32,7 +32,7 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
     environment: development
-    needs: build
+    needs: init
 
     steps:
     - name: Execute SSH for deployment
