@@ -29,4 +29,10 @@ jobs:
     - name: Docker Push
       run: docker push alvindra/wayshub:${{ vars.TAG }}
           
-      
+  test:
+    runs-on: ubuntu-22.04
+    environment: development
+
+    steps:
+    - name: test
+      run: echo "testing"
