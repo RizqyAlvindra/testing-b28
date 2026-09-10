@@ -1,6 +1,6 @@
 def secret = 'mentor'
-def server = 'mentor@146.190.101.236'
-def directory = 'wayshub-backend'
+def server = 'mentor@188.166.229.119'
+def directory = 'testing-b28'
 def branch = 'main'
 
 pipeline{
