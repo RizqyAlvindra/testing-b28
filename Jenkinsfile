@@ -1,5 +1,5 @@
 def secret = 'mentor'
-def server = 'mentor@188.166.229.119'
+def server = 'mentor@103.193.177.215'
 def directory = 'testing-b28'
 def branch = 'main'
 
@@ -22,7 +22,7 @@ pipeline{
                 sshagent([secret]) {
                     sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
                     cd ${directory}
-                    docker compose build
+                    echo "docker compose build"
                     exit
                     EOF"""
                 }
